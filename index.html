@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute</title>
+    <link rel="icon" type="image/x-icon" href="/images/mainlogo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+    <section>
+       
+        <h1>A Tribute to</h1>
+        <p>Mr. Abhay Singh</p>
+
+     
+        <div class="container-1">
+            <div class="left-container"> 
+                <img src="images/abhay.jpeg" alt="abhay's pic">
+            </div>
+            <div class="right-container">
+                <h2>Personality</h2>
+                <p>  Abhay,has a calm nature and a sharp mind.He is a great writer.His favourite hobby is to write poems.
+                    He is good at studies. He is also helping in nature. He loves playing cricket. His Personality 
+                    is unique and friends like him is hard to find. 
+                    
+                </p>
+            </div>
+        </div>
+       
+
+        <div class="container-1" id="reverse">
+            <div class="left-container"> 
+                <img src="images/2gether.jpeg" alt="" srcset="">
+            </div>
+            <div class="right-container">
+                <h2>Memories</h2>
+                <p>We met on August 2019 , i didn't remember the exact date. I recognised his ability that he is good in studies when
+                    I.S. Sir , our physics teacher came in and asked the class about who is Abhay and Zaid??. We were suprised , later we came to know that
+                    we got highest marks in physics.We lived in the same hostel , his room is just beside mine. I usually comes to him having some doubt
+                    in subjects. He was found of books and still he is. He always comes to my rescue whenever i'm stuck at some subject.We were both intrested in 
+                    watching anime. Our favorite anime till date is <strong>"Naruto: Shippuden"</strong> and we used to watch his episode together while having the dinner on my laptop.I'm still
+                    missing those Golden Days.
+                </p>
+            </div>
+        </div>
+      
+
+        <div class="container-1">
+            <div class="left-container"> 
+                <img id=logo src="images/logo.png" alt="" srcset="">              
+                <img src="images/shikamaru.png" alt="" srcset="">
+                <img src="images/metal.jpg" alt="" srcset="">
+                <img src="images/saske.jpeg" alt="" srcset="">
+                <img src="images/jiraya.jpg" alt="" srcset="">
+                <img src="images/NS.jpg" alt="" srcset="">
+            </div>
+            <div class="right-container">
+                <h2>Character Sketch:-</h2>
+                <p><strong>As you Know Naruto is one of ours favorite   anime and it's such a drag to find which character does Abhay resamble to.<br>
+                    But  i have given it a try:</strong> </p>
+                    <ul>
+                        <li>Shikamru <p> His smartness and way he solves a problem reminds me of Shikamru</p></li>
+                        <li>Metal <p>
+                            As the name suggest he is not afraid when he is right with respect to subject knowledge, but he 
+                            nervous while speaking in crowd or in front of teachers.He sometime remind me of metal (A character in boruto who starts to act
+                            weird when crowd watches him) .But i'm sure he will soon be able to cope up with these stuffs.
+                        </p></li>
+                        <li>Lee <p> As he is as hard-working as Lee</p></li>
+                        <li>Naruto <p>He have big heart and he never goes back on his words . Although he is not after sakura or any other girl nor he uses sexy jutsu 
+                            but he train himself hard to learn new things and always give his 100% in making task worth it.
+                        </p></li>
+                        <li>Sasuke <p>As sasuke is a bit introvert , like wise abhay stays out from girls. And like sasuke Abhay is over something
+                            .Means that like saske fixes his goal and shows full dedication towards it , same does Abhay do. </p>
+                        </li>
+                        <li>Master Jiyraya <p>The Bound between Master Jiyraya and Naruto aligns with my relationship with Abhay.
+                            He always there to teach me new things . Also , he is always there to help me out whenever i'm stuck.
+                        </p></li>
+                    </ul>
+                    <p>
+                        Although , our bond is like the friendship of Naruto & Sasuke.
+                </p>
+            </div>
+        </div>
+        <div class="container-2">
+            <h2>Gallery</h2>
+            <img id="img" src="images/boat1.jpeg" alt="" srcset="">
+        </div>
+    </section>
+    <footer>
+    <div class="container">
+        <img src="images/mainlogo.jpg" alt="">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/abhay-singh-b7235a192/"> LinkedIn</a></li>
+            <li><a href="#"> Gmail</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100005102359497"> Facebook</a></li>
+        </ul>
+    </div>
+
+    </footer>
+    
+
+
+</body>
+<script type = "text/javascript">
+    function displayNextImage() {
+        x = (x === images.length - 1) ? 0 : x + 1;
+        document.getElementById("img").src = images[x];
+    }
+
+    function displayPreviousImage() {
+        x = (x <= 0) ? images.length - 1 : x - 1;
+        document.getElementById("img").src = images[x];
+    }
+
+    function startTimer() {
+        setInterval(displayNextImage, 3);
+    }
+
+    var images = [], x = -1;
+    images[0] = "images/gp.jpg";
+    images[1] = "images/boat2.jpg";
+    images[2] = "images/zap.jpg";
+</script>
+</html>
